@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM - Parte 2</title>
+    <style>
+        body{
+            background: rgb(247, 149, 114);
+            color: rgb(22, 21, 21);
+            font: normal 15pt Arial ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo DOM - Parte 2</h1>
+    <p>Paragrafo 1</p>
+    <p>Paragrafo 2</p>
+    <p>Paragrafo 3 - Colocando em <strong>NEGRITO</strong></p>
+    <div id="msg"> Div0</div>
+    <script>
+        //selecionando por id
+        let corpo = window.document.body
+        let p1 = window.document.getElementsByTagName('p')[1]
+        let d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //d.innerText = "Mandei trocar o msg por JavaScript usando DOM"
+        window.document.getElementById('msg').innerText = "Outra forma"
+    </script>
+
+    
+</body>
+</html>
