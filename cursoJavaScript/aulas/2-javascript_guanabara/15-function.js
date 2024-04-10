@@ -7,4 +7,4 @@ engordar(p=0){
 }}
 //console.log(amigo)
 amigo.engordar(10)
-console.log(`${amigo.nome} engordou ${amigo.peso}`)
+console.log(`${amigo.nome} pesa ${amigo.peso}kg.`)
