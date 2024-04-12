@@ -32,6 +32,7 @@
 <body>
     <!-- An element with a unique id -->
     <h1 id="myHeader">My Cities</h1>
+    <button onmouseenter="displayResult()">Change Text</button>
 
     <!-- Multiple elements with same class -->
     <h2 class="city">London</h2>
@@ -42,5 +43,11 @@
 
     <h2 class="city">Tokyo</h2>
     <p>Tokyo is the capital of Japan.</p>  
+
+    <script>
+        function displayResult(){
+            document.getElementById("myHeader").innerHTML = "Have a nice day!"
+        }
+    </script>
 </body>
 </html>
