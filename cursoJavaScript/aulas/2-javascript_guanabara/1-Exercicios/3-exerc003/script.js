@@ -6,9 +6,16 @@ function contar(){
     let passo = document.getElementById('txtp')
     let res = document.getElementById('res')
     
-    if (ini.value.lenght == 0 || fim.value.lenght == 0 || passo.value.lenght == 0){
+    if (ini.value == 0 || fim.value == 0 || passo.value == 0){
         alert('Erro! Faltam dados.')
     }else{
         res.innerHTML = 'Contando..'
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        for (let c = i; c <= f ; c += p){
+            res.innerHTML += `${c} \u{1F603}`
+        }
     }
 }
