@@ -1,0 +1,11 @@
+circle{
+    stroke: rgb(1, 2, 1);
+    stroke-width: 10px;
+    fill: #e9e917;
+  }
+
+  rect{
+    stroke: black; 
+    stroke-width: 2px;
+    fill: rgb(5, 51, 94); 
+  }
